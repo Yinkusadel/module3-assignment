@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<html>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>restaurant</title>
+    <script>
+        function checkField () {
+            var field = document.getElementById("food").value;
+            var regex = /^[A-Za-z] {3} $/ ;
+
+            if(regex.test(field))// test is
+            document.getElementById("message3").innerHTML = "input is fine";
+            else
+            document.getElementById("message3").innerHTML = "input declined";
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>The javascript onblur effect works on the FOOD input</h1>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><span></span><br><br>
+        <label for="school">school:</label>
+        <input type="text" id="school" name="school"><span></span><br><br>
+        <label for="food">food:</label>
+        <input type="text" id="food" name="food" onblur="checkField();"><span id="message3"></span><br><br>
+        <label for="designer">designer:</label>
+        <input type="text" id="designer" name="designer"  required pattern=" [A-Za-z] {3} " title="what is your best designer"><br><br>
+
+
+
+
+
+
+        <input type="submit" value="Submit">
+        
+      </form>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
