@@ -1,0 +1,20 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+
+table {
+    border: 1px solid #0c0000;
+    text-align: left;
+    padding: 10px;
+    width: 500px;
+}
+
+#table {
+    background-color: rgb(169, 175, 175);
+    width: 500px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
